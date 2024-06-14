@@ -7,4 +7,4 @@ add_executable(helloSLAM helloSLAM.cpp)
 
 include_directories("/usr/include/eigen3")
 add_subdirectory(useEigen)
-
+add_subdirectory(camera)
