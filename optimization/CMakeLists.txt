@@ -4,5 +4,10 @@ project(optimization)
 find_package(Ceres REQUIRED)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
+
+
 add_executable(curveFittingCeres curveFittingCeres.cpp)
 target_link_libraries(curveFittingCeres Ceres::ceres ${OpenCV_LIBS} )
+
+add_executable(pose_estimation_3d2d pose_estimation_3d2d.cpp)
+target_link_libraries(pose_estimation_3d2d Ceres::ceres ${OpenCV_LIBS} )
