@@ -4,10 +4,12 @@ project(VSlamPractice)
 
 add_executable(helloSLAM helloSLAM.cpp)
 
-
+#eigen
 include_directories("/usr/include/eigen3")
+
 add_subdirectory(useEigen)
 add_subdirectory(camera)
 add_subdirectory(optimization)
 add_subdirectory(bundle_adjustment)
 add_subdirectory(dense_mapping)
+add_subdirectory(vslam)
